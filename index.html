@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-Commerce</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>E-Commerce</h1>
+    <p id="greeting"></p>
+
+    <div>
+      <input type="text" id="usernameInput" placeholder="Enter your name" />
+      <button id="saveNameBtn">Save Name</button>
+    </div>
+
+    <br />
+    <button id="resetBtn">Reset All Preferences</button>
+
+    <br />
+
+    <p id="cacheStatus"></p>
+
+    <label for="fontSelect">Choose Font:</label>
+    <select id="fontSelect">
+      <option value="Arial">Arial</option>
+      <option value="Times New Roman">Times New Roman</option>
+      <option value="Courier New">Courier New</option>
+    </select>
+
+    <div class="container">
+      <div class="box">
+        <h2>Products</h2>
+        <div id="products"></div>
+      </div>
+
+      <div>
+        <label for="shipping">Shipping Method:</label>
+        <select id="shipping">
+          <option value="standard">Standard</option>
+          <option value="express">Express</option>
+        </select>
+      </div>
+
+      <div class="box">
+        <h2>Cart</h2>
+        <ul id="cart"></ul>
+        <p>Total: R<span id="total">0</span></p>
+        <button id="clearBtn">Clear Cart</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
